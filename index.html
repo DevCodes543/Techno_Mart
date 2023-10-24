@@ -16,26 +16,26 @@
     <title>Login | Sign in</title>
   </head>
   <body>
-
     <!------------------- Nav Bar----------------- -->
-    <div class="nav">
-      <img class="logo" src="./Images/D-IMG-.jpg" alt="" />
+    <div class="nav" id="nav_home">
+      <img class="logo" src="../Images/D-IMG-.jpg" alt="" />
 
       <ul class="content">
         <li class="input">
           <i class="fa fa-search" aria-hidden="true"></i>
           <input class="search" type="text" placeholder="Search" />
         </li>
-        <a href="./index.html"><li class="">Home</li></a>
+        <a href="../index.html"><li class="">Home</li></a>
         <a href="./Products/product_pg.html"><li class="">Products</li></a>
         <a href="#"><li class="">About</li></a>
-        <a href=""><li class="">Contact</li></a>
+        <a href="./Contact/contact.html"><li class="">Contact</li></a>
       </ul>
       <a href="./Cart/cart.html" class="btn_cart cart btn-cart" id="cart">
         <i class="fa-solid fa-cart-shopping"></i>
         <span id="cart_number"></span>
       </a>
       <button class="btn login_btn" onclick="login()">Login</button>
+      <script src="./nav_script.js"></script>
     </div>
 
     <!----------------------- Login _ Page------------------- -->
@@ -52,6 +52,7 @@
             type="email"
             name="email"
             id="email"
+            class="input-form"
             placeholder="abc123@gmail.com"
           />
           <br />
@@ -59,6 +60,7 @@
           <input
             type="password"
             name="pwd"
+            class="input-form"
             id="pwd"
             placeholder="Enter Password"
           />

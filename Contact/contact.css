@@ -1,0 +1,30 @@
+.contact-main{
+    /* display: grid;
+    grid-template-columns: repeat(2,auto); */
+    display: flex;
+    height: 700px;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & .contact-details{
+
+        height: 400px;
+        width:500px;
+        /* border: 1px solid #cbc9c9; */
+    }
+    
+}
+.contact-form{
+    display: grid;
+    height: 400px;
+    width: 600px;
+    justify-items: start;
+    align-content: space-evenly;
+
+}
+
+
+
+
+

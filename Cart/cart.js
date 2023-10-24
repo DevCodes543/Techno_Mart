@@ -180,16 +180,29 @@ let total_amount = () => {
         // console.log(ele.price)
     }
 
+    // cart buttons  -- clear cart and place order
+
     print_amount.innerHTML = ` 
         
         <h2 class="amount" id="amount"> Total Price : ₹ ${total_price} </h2>
         <button class="btn-crt-page btn-clear-cart" id="btn-clear-cart" onclick="clear_cart()">Clear Cart</button>
-        <button type="button" class="btn-crt-page checkout" id="checkout">Place Order</button>
+
+        <a href="../Checkout/checkout.html" target="_blank">
+            <button type="button" class="btn-crt-page checkout" id="checkout" onclick="checkout_Page()" >Place Order</button> 
+        </a> 
+        
     `
     console.log("Total Price : ", total_price)
     display_cartItems();
 }
 total_amount()
+
+
+// ------ Go to Checkout Page -----------
+
+let checkout_Page=()=>{
+    
+}
 
 // let total_price=()=>{
 //     if(basket.length !=0){

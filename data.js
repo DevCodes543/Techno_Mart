@@ -2,7 +2,7 @@ let productsData=[
     {
         "id":110,
         "name":"Product 1",
-        "price":100,
+        "price":10000,
         "details":"Thin & Light Laptop 13.3 inch Quad LED Backlit IPS Display",
         
        
@@ -11,7 +11,7 @@ let productsData=[
     {
         "id":120,
         "name":"Product 2",
-        "price":200,
+        "price":60000,
         "details":"Thin & Light Laptop 13.3 inch Quad LED Backlit IPS Display",
         
         "img":"https://media.istockphoto.com/id/1368668736/photo/apple-brand-m1-model-macbook-pro-with-colorful-light-background.jpg?s=612x612&w=0&k=20&c=6Bd0Ce3A31EGSVK9dxDFoVPcX3PViYa6HdiDkOknZ5c="
