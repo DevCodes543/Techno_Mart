@@ -6,17 +6,20 @@ body {
   margin: 0;
   background-color: #000000;
   color: #d4d4d4;
-  /* position: relative; */
+  position: relative;
 }
 .logo {
-  height: 60px;
-  margin: auto;
+  position: relative;
+  top: -0.5rem;
+  height: 80px;
 }
 .nav {
   position: sticky;
   top: 0;
-  order:100;
-  background-color: #c5c4c4;
+  z-index: 10;
+  /* background-color: #c5c4c4; */
+  background-color: #dde1e1;
+  
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   height: 80px;
@@ -25,17 +28,13 @@ body {
   /* justify-content: space-evenly; */
 }
 .content {
-  font-size: 21px;
+  font-size: 1.32rem;
   color: #515656;
   display: flex;
   list-style-type: none;
-  /* flex-direction: row; */
-  /* flex-wrap: nowrap; */
-  align-content: space-between;
-  justify-content: center;
   align-items: center;
   gap: 2em;
-  justify-content: space-evenly;
+  padding-left: 0;
 }
 
 .search {
