@@ -1,12 +1,14 @@
+
 .contact-main{
     /* display: grid;
     grid-template-columns: repeat(2,auto); */
     display: flex;
     height: 700px;
-    width: 100vw;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
-
+    font-size: 1.2rem;
+    
     & .contact-details{
 
         height: 400px;
@@ -24,6 +26,18 @@
 
 }
 
+input,textarea{
+    font-size: 1rem;
+    color: black;
+}
+.message-container{
+    display: flex;
+    align-items: center;
+}
+label{
+    display: inline-block;
+    width: 10rem;
+}
 
 
 
