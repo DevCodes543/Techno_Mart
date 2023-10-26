@@ -11,7 +11,7 @@
     
     & .contact-details{
 
-        height: 400px;
+        /* height: 400px; */
         width:500px;
         /* border: 1px solid #cbc9c9; */
     }
@@ -21,19 +21,20 @@
     box-sizing: border-box;
     display: grid;
     height: 400px;
-    width: 35rem;
-    justify-items: start;
+    width: 32rem;
     align-content: space-evenly;
     justify-content: space-around;
-    border: 1px solid white;
-    box-shadow: 1px 1px 5px 2px gray;
+    /* border: 1px solid white; */
+    box-shadow: 1px 1px 6px 1px gray;
+    background-color: #1a1a1a;
     border-radius: 2rem;
+
 
 }
 
 input,textarea{
     font-size: 1rem;
-    color: black;
+    width: 15rem;
 }
 .message-container{
     display: flex;
@@ -43,6 +44,11 @@ label{
     display: inline-block;
     width: 10rem;
 }
+
+/* .btn-contact-submit{
+    align-items: center;
+    width: fit-content;
+} */
 
 
 
