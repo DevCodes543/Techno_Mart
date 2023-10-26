@@ -18,11 +18,16 @@
     
 }
 .contact-form{
+    box-sizing: border-box;
     display: grid;
     height: 400px;
-    width: 600px;
+    width: 35rem;
     justify-items: start;
     align-content: space-evenly;
+    justify-content: space-around;
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px 2px gray;
+    border-radius: 2rem;
 
 }
 
