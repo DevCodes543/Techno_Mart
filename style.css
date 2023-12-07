@@ -2,6 +2,11 @@
   box-sizing: border-box;
 
 }
+
+html{
+  font-size: 100%;
+}
+
 body {
   margin: 0;
   background-color: #000000;
@@ -11,7 +16,7 @@ body {
 .logo {
   position: relative;
   top: -0.5rem;
-  height: 80px;
+  height: 5.5rem;
 }
 .nav {
   position: sticky;
@@ -21,11 +26,15 @@ body {
   background-color: #dde1e1;
   
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  height: 80px;
+  /* grid-template-columns: repeat(5,auto); */
+  grid-template-columns: repeat(auto-fit,minmax(70px,auto));
+  
+  height: 5rem;
   align-items: center;
   justify-content: space-around;
+  
   /* justify-content: space-evenly; */
+  width: 100vw;
 }
 .content {
   font-size: 1.32rem;
@@ -33,25 +42,29 @@ body {
   display: flex;
   list-style-type: none;
   align-items: center;
-  gap: 2em;
+  gap: 2rem;
   padding-left: 0;
+  /* background-color: #f80303; */
+  font-size: 1.4rem;
+  /* display: none; */
 }
 
 .search {
   height: 30px;
   border: 2px solid black;
   border-radius: 9px;
-  height: 29px;
+  /* height: 29px; */
   background-color: #e0dfdf;
   /* padding-left: 18px; */
   font-size: 18px;
   padding-left: 35px;
+  width: 19vmax;
 }
 .login_btn,
 .btn-cart {
   height: 40px;
   line-height: inherit;
-  width: 110px;
+  /* width: 110px; */
   /* width: fit-content; */
   /* border: 2px solid black; */
   border-radius: 9px;
@@ -96,6 +109,8 @@ body {
   font-size: 18px;
   
   margin: auto;
+  width: 19vmax;
+ 
 }
 .input i {
   
@@ -103,6 +118,15 @@ body {
   color: black;
   line-height: 10px;
   margin: 10px;
+}
+
+.hamburger{
+  display: none;
+  /* background-color: #f405e4; */
+  height: auto;
+  width: auto;
+  font-size: 2rem;
+  color: #000000;
 }
 
 .login_pop {
@@ -263,4 +287,122 @@ body {
   border-color: #f0f1a3;
   transform: scale(1.12);
   transition: .3s ease-in-out;
+}
+
+
+@media only screen and (width>970px) {
+  .logo-1{
+    display: block;
+  }
+  .logo-2{
+    display: none;
+  }
+}
+@media only screen and (max-width:1040px) {
+  .content{
+    gap: 1rem;
+    background-color: transparent;
+    
+  }
+}
+@media only screen and (max-width:970px) {
+  .logo-1{
+    display: none;
+  }
+  .logo-2{
+    display: block;
+  }
+  .search,.input{
+    width: 15rem;
+    transition: .4s ease-in-out;
+  }
+}
+@media only screen and (max-width:850px) {
+  .content{
+    gap: 1rem;
+    display: none;
+    transition: 10s ease-in-out;
+    
+  }
+  .hamburger{
+    display: block;
+  }
+  .search,.input{
+    width: 38vmax;
+    transition: .4s ease-in-out;
+  }
+}
+
+@media (max-width:600px) {
+  .nav {
+    
+    
+    /* display: flex;
+    flex-direction: column; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(4,auto); */
+    /* grid-template-columns: repeat(auto-fit,minmax(70px,auto)); */
+
+
+    /* justify-content: space-evenly; */
+    /* width: auto; */
+    /* height: auto; */
+  }
+  .content {
+    display: none;
+    grid-column: 2;
+    grid-row: 3;
+    /* grid-row: inherit; */
+    flex-direction: column;
+  }
+  .btn-cart{
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .hamburger{
+    display: block;
+    grid-row: 1;
+    grid-column: 4;
+    }
+  .btn-login{
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .input{
+    /* display: inline; */
+    grid-row: 2;
+    grid-column: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* width: 2rem; */
+    /* width: 100px; */
+    /* position: absolute; */
+  }
+  .search,.input{
+    transition: .4s ease-in-out;
+    /* width: 10rem; */
+    /* position: relative; */
+    /* left: 0; */
+    /* width: 100vw; */
+    
+  }
+  .logo-1{
+    display: block;
+  }
+  .logo-2{
+    display: none;
+  }
+}
+@media only screen and (width<500px) {
+  .logo-1{
+    display: none;
+  }
+  .logo-2{
+    display: block;
+  }
+  .search,.input{
+    /* display: none; */
+    /* width: 15rem; */
+    transition: .4s ease-in-out;
+  }
 }

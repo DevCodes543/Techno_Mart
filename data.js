@@ -60,6 +60,13 @@ let productsData=[
         "price":800,
         "details":"Thin & Light Laptop 13.3 inch Quad LED Backlit IPS Display",
         "img":"https://cdn.vox-cdn.com/thumbor/d3mJddAsI2HsWAxlZZjUElxcpYs=/0x0:2040x1360/1400x788/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/22046476/vpavic_4291_20201113_0366.0.jpg"
+    },
+    {
+        "id":190,
+        "name":"Product 9",
+        "price":8000,
+        "details":"Thin & Light Laptop 13.3 inch Quad LED Backlit IPS Display",
+        "img":"https://cdn.vox-cdn.com/thumbor/d3mJddAsI2HsWAxlZZjUElxcpYs=/0x0:2040x1360/1400x788/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/22046476/vpavic_4291_20201113_0366.0.jpg"
     }
 
 ]

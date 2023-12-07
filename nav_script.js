@@ -98,4 +98,3 @@ let generate_nav=()=>{
     })
 }
 generate_nav();
-// nav.innerHTML=

@@ -58,10 +58,10 @@
         <img src="../Images/contact-img.svg" class="contact-img" alt="">
       </div>
       <div class="contact-form-box" id="contact-form">
-        <form action="" class="contact-form">
+        <form  onsubmit="validate()"  class="contact-form">
           <div>
             <label for="name">Enter Name : </label>
-            <input type="text" id="name" placeholder="Name" />
+            <input type="text" name="name" id="name" placeholder="Name" />
           </div>
           <div>
             <label for="phone">Ph. Number : </label>
@@ -76,19 +76,23 @@
           </div>
           <div>
             <label for="email">E-mail : </label>
-            <input type="email" name="" id="email" placeholder="abc123@xyz.com" />
+            <input type="email" name="mail" id="email" placeholder="abc123@xyz.com" />
+          </div>
+          <div>
+            <label for="subject">Subject : </label>
+            <input type="text" name="subject" id="subject" placeholder="Subject" />
           </div>
           <div class="message-container">
             <label for="message">Enter Message : </label>
             <textarea
-              name=""
+              name="message"
               class="message"
               id="message"
               cols="20"
               rows="7"
             ></textarea>
           </div>
-          <button type="submit" class="btn-contact-submit">Submit</button>
+          <button id="btn-contact-submit" type="button" class="btn-contact-submit" onclick="validate()" >Submit</button>
         </form>
       </div>
     </div>
