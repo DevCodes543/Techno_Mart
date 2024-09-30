@@ -58,7 +58,7 @@
         <img src="../Images/contact-img.svg" class="contact-img" alt="">
       </div>
       <div class="contact-form-box" id="contact-form">
-        <form  action="https://api.web3forms.com/submit" method="POST"   class="contact-form" >
+        <form  action="https://api.web3forms.com/submit" method="POST"   class="contact-form" onsubmit="sendEmail()">
           <input type="hidden" name="access_key" value="83136e56-b75d-46dc-a775-1c833179cd3a">
           <input type="hidden" name="from_name" value="TechnoMart-24x7.vercel.app">
           
@@ -97,7 +97,8 @@
           </div>
           
 
-          <input type="hidden" name="redirect" value="https://techno-mart.vercel.app">
+          <!-- <input type="hidden" name="redirect" value="https://techno-mart.vercel.app"> -->
+          <input type="hidden" name="redirect" value="https://techno-mart.netlify.app/Contact/success.html">
           <div class="h-captcha" data-captcha="true"></div>
           <button id="btn-contact-submit" type="submit" class="btn-contact-submit" >Submit</button>
         </form>
@@ -105,6 +106,7 @@
     </div>
     <script src="./contact.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
+    
 
   </body>
 </html>

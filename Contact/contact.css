@@ -83,3 +83,60 @@ label{
     }
     
 }
+
+
+/* success page  */
+
+.s-body{
+   
+    height: 900px;
+    display: flex;
+    background-color: #000000;
+    color: aliceblue;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    /* margin: auto; */
+}
+.success-main{
+    height: 400px;
+    width: 500px;
+    border: 2px solid #2be2d3;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(200deg ,  black, grey );
+
+    & .icon{
+        font-size: 100px;
+        color: #2be2d3;
+    }
+
+}
+.s-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .s-heading{
+        color: #2be2d3;
+
+    }
+
+
+    & button{
+        height: 40px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: #bbedf6;
+        border-radius: 15px;
+        border: 2px solid #4875df;
+    }
+    & button:hover{
+        background-color: #92edf7;
+    }
+}

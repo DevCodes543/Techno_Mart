@@ -23,15 +23,31 @@ cart_items_count()
 
 
 // validate 
-function validate(){
-    // debugger;
-    let name=document.getElementById('name').value;
-    console.log(name);
-    console.log("name")
-    // alert(name);
-    if(name==""){
-        alert("enter details");
-    }
-}
+// function validate(){
+//     // debugger;
+//     let name=document.getElementById('name').value;
+//     console.log(name);
+//     console.log("name")
+//     // alert(name);
+//     if(name==""){
+//         alert("enter details");
+//     }
+// }
 
+// function sendEmail()
+// {
+//     let fm =document.getElementById("email");
+//     let sj = document.getElementById("subject");
+//     Email.send({
+//         Host : "smtp.elasticemail.com",
+//         Username : "pritilucky202@gmail.com",
+//         Password : "B639F3A3ADF28DD6F0DEA8868AC26CFE3A96",
+//         To : 'pritilucky202@gmail.com',
+//         From : fm.value,
+//         Subject : sj.value,
+//         Body : "And this is the body"
+//     }).then(
+//       message => alert(message)
+//     );
+// }
 
